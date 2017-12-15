@@ -13,12 +13,12 @@
     if ($_POST['submit']) {
     if ($name != '' && $email != '') {
         if ($human == '15') {                 
-            if (mail ($to, $subject, $tel $body, $from)) { 
+            if (mail ($to, $subject, $tel, $body, $from)) { 
             echo '<p>Your message has been sent!</p>';
         } else { 
             echo '<p>Something went wrong, go back and try again!</p>'; 
         } 
-    } else if ($_POST['submit'] && $human != '4') {
+    } else if ($_POST['submit'] && $human != '15') {
         echo '<p>You answered the anti-spam question incorrectly!</p>';
     }
     } else {
